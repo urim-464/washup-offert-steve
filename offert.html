@@ -154,144 +154,7 @@
             margin: 12px 0 10px;
             font-size: 0.75rem;
             line-height: 1.3;
-        }
-        
-        .gdpr label {
-            display: flex;
-            align-items: flex-start;
-            gap: 5px;
-            cursor: pointer;
-        }
-        
-        .gdpr a {
-            color: var(--primary);
-        }
-        
-        .rot-notice {
-            display: flex;
-            justify-content: center;
-            margin: 10px 0 12px;
-            font-size: 0.88rem;
-            color: var(--accent);
-            font-weight: 600;
-        }
-        
-        .btn-row {
-            text-align: center;
-        }
-        
-        button {
-            background: var(--primary);
-            color: white;
-            border: none;
-            padding: 11px 26px;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-            margin-top: 1px;
-        }
-        
-        button:hover {
-            background: #004daa;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0,102,204,0.25);
-        }
-        
-        .success {
-            display: none;
-            background: #d9f1e3;
-            color: #155724;
-            padding: 10px;
-            border-radius: 6px;
-            text-align: center;
-            margin-top: 10px;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>Kostnadsfri offert</h1>
-        <p class="subhead">Fyll i formuläret nedan så kontaktar <strong>Washup AB</strong> dig inom 24 timmar.</p>
-        
-        <p class="rot-notice">
-            ✅ ROT‑avdrag gäller för många av våra tjänster.
-        </p>
-        
-        <form id="contactForm" onsubmit="handleSubmit(event)">
-            <div class="form-row">
-                <label for="name">Namn *</label>
-                <input type="text" id="name" name="name" required placeholder="Anna Andersson">
-            </div>
-            
-            <div class="form-row">
-                <label for="email">E‑post *</label>
-                <input type="email" id="email" name="email" required placeholder="din.email@exempel.se">
-            </div>
-            
-            <div class="form-row">
-                <label for="phone">Telefonnummer *</label>
-                <input type="tel" id="phone" name="phone" required placeholder="070‑xxxx xxx">
-            </div>
-            
-            <div class="form-row">
-                <label for="address">Address / Postnr</label>
-                <input type="text" id="address" name="address" placeholder="Gatunamn 12, 123 45 Ort">
-            </div>
-            
-            <div class="form-row">
-                <label for="message">Kort beskrivning</label>
-                <textarea id="message" name="message" rows="3" placeholder="2‑plansvilla, tegelfasad osv"></textarea>
-            </div>
-            
-            <div class="services">
-                <h3>Vilka tjänster?</h3>
-                <div class="checkbox-grid">
-                    <label class="checkbox-item">
-                        <span class="custom-checkbox">
-                            <input type="checkbox" name="service" value="fasadtvätt">
-                        </span>
-                        <span>Fasadtvätt</span>
-                    </label>
-                    <label class="checkbox-item">
-                        <span class="custom-checkbox">
-                            <input type="checkbox" name="service" value="taktvätt">
-                        </span>
-                        <span>Taktvätt</span>
-                    </label>
-                    <label class="checkbox-item">
-                        <span class="custom-checkbox">
-                            <input type="checkbox" name="service" value="utemiljo">
-                        </span>
-                        <span>Utemiljö‑tvätt</span>
-                    </label>
-                    <label class="checkbox-item">
-                        <span class="custom-checkbox">
-                            <input type="checkbox" name="service" value="other">
-                        </span>
-                        <span>Annat (beskriv i textfältet)</span>
-                    </label>
-                </div>
-            </div>
-            
-            <div class="gdpr">
-                <label>
-                    <span class="custom-checkbox">
-                        <input type="checkbox" id="gdpr" name="gdpr" required>
-                    </span>
-                    <span><strong>Jag vill bli kontaktad av Washup AB</strong> och godkänner att mina uppgifter behandlas enligt <a href="https://din.sajt/integritetspolicy" target="_blank">integritetspolicy</a> och GDPR. Samtycke kan återkallas när som helst.</span>
-                </label>
-            </div>
-            
-            <div class="btn-row">
-                <button type="submit">Skicka förfrågan</button>
-            </div>
-        </form>
-        
-        <div id="successMessage" class="success">
+                                                                                                                                                                        
             ✅ Tack! Din förfrågan har skickats. Vi kontaktar dig inom kort.
         </div>
     </div>
@@ -301,7 +164,7 @@
             e.preventDefault();
             
             // washup1@proton.me används i bakgrunden (backend/email)
-            // fetch('/api/submit', { method: 'POST', body: new FormData(e.target) });
+            // fetch('/api/submit', { https://formsubmit.co/washup1@proton.me });
             
             const success = document.getElementById('successMessage');
             success.style.display = 'block';
